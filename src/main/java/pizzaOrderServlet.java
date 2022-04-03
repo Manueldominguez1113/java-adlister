@@ -16,9 +16,6 @@ public class pizzaOrderServlet extends HttpServlet {
         System.out.println(request.getParameter("crust"));
         System.out.println(request.getParameter("sauce"));
         System.out.println(request.getParameter("size"));
-        System.out.println(" ");
-
-    response.sendRedirect("/hello-world");
 
     }
 
