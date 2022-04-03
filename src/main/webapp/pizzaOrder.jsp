@@ -14,7 +14,7 @@
 <body>
 <h1> pizza order form</h1>
 
-<form action="<c:url value="/pizza-order"/>">
+<form method="post">
     <label for="crust">Select a crust type:</label>
     <select name="crust" id="crust">
         <option value="Thin">Thin crust</option>
@@ -43,7 +43,6 @@
     <input type="submit" value="Submit">
 </form>
 
-<h2>${Order}<h2>
 
 </body>
 </html>
