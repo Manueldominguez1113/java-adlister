@@ -12,7 +12,7 @@ public class pizzaOrderServlet extends HttpServlet {
         request.getRequestDispatcher("pizzaOrder.jsp").forward(request, response);
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
         System.out.println(request.getParameter("crust"));
         System.out.println(request.getParameter("sauce"));
         System.out.println(request.getParameter("size"));

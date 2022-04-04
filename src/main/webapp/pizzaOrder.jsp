@@ -43,6 +43,6 @@
     <input type="submit" value="Submit">
 </form>
 
-<h2> So you would like one ${size},${crust},with ${sauce}?</h2>
+
 </body>
 </html>
