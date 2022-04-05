@@ -1,4 +1,5 @@
-package Adverts;
+import Adverts.Ad;
+import Adverts.Ads;
 
 import java.util.ArrayList;
 import java.util.List;

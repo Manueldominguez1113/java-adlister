@@ -16,8 +16,11 @@
 <body>
 <h1> welcome! this is where ill post the ads</h1>
 
-<c:forEach var="ad"  items="ads">
-<div class="ads">example</div>
+<c:forEach var="Ad"  items="${ads}">
+    <div class="ads"><h1>${Ad.title}</h1>
+        <h3>${Ad.description}</h3>
+</div>
+
 </c:forEach>
 </body>
 </html>
