@@ -15,15 +15,15 @@ public class loginPageServlet extends HttpServlet {
 */
         request.getRequestDispatcher("/login.jsp").forward(request,response);
 
-
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
-        if (request.getMethod().equalsIgnoreCase("post")) {
+
             String username = request.getParameter("username");
-            String password = request.getParameter("password");
+        String password = request.getParameter("password");
+
             if (username.equals("admin") && password.equals("password")) {
-                response.sendRedirect("/profile");
-            }
+                response.sendRedirect("/intro/profile.jsp");
+
         }
     }
 }

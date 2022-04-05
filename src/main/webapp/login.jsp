@@ -16,17 +16,17 @@
 </head>
 <body>
 <h1>please log in</h1>
-<form action="/login">
+<form action="/login" method="post">
     <label for="username">username:</label><br>
     <input type="text" id="username" name="username"><br>
     <label for="password">password:</label><br>
     <input type="text" id="password" name="password"><br>
     <input type="submit" value="Submit">
 </form>
-<c:if
+<%--<c:if
         test="${param.username.equalsIgnoreCase('admin') && param.password.equalsIgnoreCase('password')}">
     <c:redirect url="intro/profile.jsp"/>
-</c:if>
+</c:if>--%>
 <%--<c:when
         test="${param.username.equalsIgnoreCase('admin') && param.password.equalsIgnoreCase('password')}">
     <c:redirect url="profile.jsp"/>
