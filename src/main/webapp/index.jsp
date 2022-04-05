@@ -2,14 +2,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title><%= "some title" %></title>
+    <jsp:include page="partials/head.jsp">
+        <jsp:param name="title" value="home"/>
+        </jsp:include>
 </head>
 <body>
-    <c:if test="true">
+
         <h1>Variable names should be very descriptive</h1>
-    </c:if>
-    <c:if test="false">
-        <h1>single letter variable names are good</h1>
-    </c:if>
+    <a href="/login">login</a>
+<a href="/products">products</a>
+<a href="/products/create">create</a>
+
 </body>
 </html>

@@ -22,7 +22,7 @@ public class HelloWorldServlet extends HttpServlet {
         // pass the value of the name variable to the view, and send the request
         // forward to the hello.jsp file
         request.setAttribute("name", name);
-        request.getRequestDispatcher("/hello.jsp").forward(request, response);
+        request.getRequestDispatcher("/intro/hello.jsp").forward(request, response);
     }
 }
 

@@ -10,10 +10,13 @@
 
 <html>
 <head>
-    <title>login page</title>
+   <jsp:include page="/partials/head.jsp">
+       <jsp:param name="title" value="Login Page"/>
+       </jsp:include>
 </head>
 <body>
-<form action="login.jsp">
+<h1>please log in</h1>
+<form action="/login">
     <label for="username">username:</label><br>
     <input type="text" id="username" name="username"><br>
     <label for="password">password:</label><br>
@@ -22,7 +25,7 @@
 </form>
 <c:if
         test="${param.username.equalsIgnoreCase('admin') && param.password.equalsIgnoreCase('password')}">
-    <c:redirect url="profile.jsp"/>
+    <c:redirect url="intro/profile.jsp"/>
 </c:if>
 <%--<c:when
         test="${param.username.equalsIgnoreCase('admin') && param.password.equalsIgnoreCase('password')}">
