@@ -12,8 +12,8 @@ public class loginPageServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         /*request.setAttribute("title","hello this worked!1");
         request.getRequestDispatcher("partials/head.jsp").forward(request, response);
-*/
-        request.getRequestDispatcher("/login.jsp").forward(request,response);
+            this outputs html, therefore should stay on the jsp.   */
+        request.getRequestDispatcher("/intro/login.jsp").forward(request,response);
 
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
