@@ -25,14 +25,15 @@ public class codeRunner {
             System.out.println("  date: " + rs.getDate("release_date"));
         }
 
-        String query = "INSERT INTO albums (artist, name, release_date, genre, sales) VALUES('Nelly Furtado', 'Loose', DATE('2006-05-20'), 'Pop, Urban, R&B', 12.5)";
-        //Statement stmt = connection.createStatement();
+
+       /* String query = "INSERT INTO albums (artist, name, release_date, genre, sales) VALUES('Kelly', 'coomon', '2006-10-20', 'Pop, Urban, R&B', 2.5)";
+        Statement stmt = connection.createStatement();
         stmt.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
-       // ResultSet rs = stmt.getGeneratedKeys();
+        ResultSet rs = stmt.getGeneratedKeys();
         if (rs.next()) {
             System.out.println("Inserted a new record! New id: " + rs.getLong(1));
         }
-
+*/
     }
 
 
