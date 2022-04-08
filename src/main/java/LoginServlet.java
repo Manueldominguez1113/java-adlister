@@ -17,9 +17,9 @@ public class LoginServlet extends HttpServlet {
         boolean validAttempt = username.equals("admin") && password.equals("password");
 
         if (validAttempt) {
-            response.sendRedirect("/profile");
+            response.sendRedirect("/WEB-INF/profile");
         } else {
-            response.sendRedirect("/login");
+            response.sendRedirect("login");
         }
     }
 }
